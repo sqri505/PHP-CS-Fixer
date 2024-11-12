@@ -17,6 +17,7 @@ namespace PhpCsFixer\Cache;
 /**
  * @author Dariusz Rumiński <dariusz.ruminski@gmail.com>
  *
+ * @readonly
  * @internal
  */
 interface CacheManagerInterface
