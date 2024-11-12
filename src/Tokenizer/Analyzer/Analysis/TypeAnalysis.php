@@ -54,9 +54,9 @@ final class TypeAnalysis implements StartEndTokenAwareAnalysis
 
     private string $name;
 
-    private int $startIndex;
+    private ?int $startIndex;
 
-    private int $endIndex;
+    private ?int $endIndex;
 
     private bool $nullable;
 
@@ -87,11 +87,19 @@ final class TypeAnalysis implements StartEndTokenAwareAnalysis
 
     public function getStartIndex(): int
     {
+        if (null === $this->startIndex) {
+            throw new \RuntimeException('TypeAnalysis: no start index.');
+        }
+
         return $this->startIndex;
     }
 
     public function getEndIndex(): int
     {
+        if (null === $this->endIndex) {
+            throw new \RuntimeException('TypeAnalysis: no end index.');
+        }
+
         return $this->endIndex;
     }
 
