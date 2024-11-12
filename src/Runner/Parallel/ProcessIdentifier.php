@@ -19,6 +19,7 @@ namespace PhpCsFixer\Runner\Parallel;
  *
  * @author Greg Korba <greg@codito.dev>
  *
+ * @readonly
  * @internal
  */
 final class ProcessIdentifier
