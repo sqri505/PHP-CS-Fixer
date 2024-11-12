@@ -15,6 +15,7 @@ declare(strict_types=1);
 namespace PhpCsFixer\Tokenizer\Analyzer\Analysis;
 
 /**
+ * @readonly
  * @internal
  *
  * @phpstan-type _AttributeItem array{start: int, end: int, name: string}
