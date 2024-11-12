@@ -17,6 +17,7 @@ namespace PhpCsFixer\Console\Output;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
+ * @readonly
  * @internal
  */
 final class OutputContext
