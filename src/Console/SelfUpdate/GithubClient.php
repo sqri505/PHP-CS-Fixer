@@ -15,6 +15,8 @@ declare(strict_types=1);
 namespace PhpCsFixer\Console\SelfUpdate;
 
 /**
+ * @readonly
+ *
  * @internal
  */
 final class GithubClient implements GithubClientInterface
@@ -29,7 +31,7 @@ final class GithubClient implements GithubClientInterface
     public function getTags(): array
     {
         $result = @file_get_contents(
-            $this->url,
+            self::URL,
             false,
             stream_context_create([
                 'http' => [
@@ -39,7 +41,7 @@ final class GithubClient implements GithubClientInterface
         );
 
         if (false === $result) {
-            throw new \RuntimeException(\sprintf('Failed to load tags at "%s".', $this->url));
+            throw new \RuntimeException(\sprintf('Failed to load tags at "%s".', self::URL));
         }
 
         /**
@@ -54,7 +56,7 @@ final class GithubClient implements GithubClientInterface
         if (JSON_ERROR_NONE !== json_last_error()) {
             throw new \RuntimeException(\sprintf(
                 'Failed to read response from "%s" as JSON: %s.',
-                $this->url,
+                self::URL,
                 json_last_error_msg()
             ));
         }
