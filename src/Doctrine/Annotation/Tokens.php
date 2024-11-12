@@ -20,6 +20,7 @@ use PhpCsFixer\Tokenizer\Token as PhpToken;
 /**
  * A list of Doctrine annotation tokens.
  *
+ * @readonly
  * @internal
  *
  * @extends \SplFixedArray<Token>
