@@ -17,6 +17,7 @@ namespace PhpCsFixer\RuleSet;
 use PhpCsFixer\Preg;
 
 /**
+ * @readonly
  * @internal
  */
 abstract class AbstractMigrationSetDescription extends AbstractRuleSetDescription

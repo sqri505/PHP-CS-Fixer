@@ -15,6 +15,7 @@ declare(strict_types=1);
 namespace PhpCsFixer\RuleSet;
 
 /**
+ * @readonly
  * @internal
  */
 abstract class AbstractRuleSetDescription implements RuleSetDescriptionInterface
