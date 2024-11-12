@@ -16,7 +16,7 @@ namespace PhpCsFixer\FixerDefinition;
 
 /**
  * @author Dariusz Rumiński <dariusz.ruminski@gmail.com>
- * 
+ *
  * @readonly
  */
 final class CodeSample implements CodeSampleInterface

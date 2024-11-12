@@ -21,6 +21,7 @@ use PhpCsFixer\Tokenizer\Tokens;
 
 /**
  * @readonly
+ *
  * @internal
  */
 final class FirstClassCallableTransformer extends AbstractTransformer

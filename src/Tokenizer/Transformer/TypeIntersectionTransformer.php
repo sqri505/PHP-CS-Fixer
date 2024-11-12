@@ -24,6 +24,7 @@ use PhpCsFixer\Tokenizer\Tokens;
  * or `} catch (ExceptionType1 & ExceptionType2 $e) {`.
  *
  * @readonly
+ *
  * @internal
  */
 final class TypeIntersectionTransformer extends AbstractTypeTransformer

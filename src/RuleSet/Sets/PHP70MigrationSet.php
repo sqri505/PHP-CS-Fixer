@@ -18,6 +18,7 @@ use PhpCsFixer\RuleSet\AbstractMigrationSetDescription;
 
 /**
  * @readonly
+ *
  * @internal
  */
 final class PHP70MigrationSet extends AbstractMigrationSetDescription

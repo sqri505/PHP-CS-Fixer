@@ -22,6 +22,7 @@ use Symfony\Component\Console\Formatter\OutputFormatter;
  * @author Boris Gorbylev <ekho@ekho.name>
  *
  * @readonly
+ *
  * @internal
  */
 final class JunitReporter implements ReporterInterface

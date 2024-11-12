@@ -35,6 +35,7 @@ use PhpCsFixer\Utils;
 
 /**
  * @readonly
+ *
  * @internal
  */
 final class FixerDocumentGenerator

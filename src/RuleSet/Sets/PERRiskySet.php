@@ -19,6 +19,7 @@ use PhpCsFixer\RuleSet\DeprecatedRuleSetDescriptionInterface;
 
 /**
  * @readonly
+ *
  * @internal
  *
  * @deprecated use `@PER-CS:risky` instead

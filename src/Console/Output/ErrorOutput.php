@@ -23,6 +23,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 /**
  * @readonly
+ *
  * @internal
  */
 final class ErrorOutput

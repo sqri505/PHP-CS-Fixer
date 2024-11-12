@@ -18,6 +18,7 @@ namespace PhpCsFixer\ConfigurationException;
  * @author Dariusz Rumiński <dariusz.ruminski@gmail.com>
  *
  * @readonly
+ *
  * @internal
  */
 final class InvalidForEnvFixerConfigurationException extends InvalidFixerConfigurationException {}

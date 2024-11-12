@@ -16,7 +16,7 @@ namespace PhpCsFixer\FixerDefinition;
 
 /**
  * @author Andreas Moeller <am@localheinz.com>
- * 
+ *
  * @readonly
  */
 interface VersionSpecificCodeSampleInterface extends CodeSampleInterface

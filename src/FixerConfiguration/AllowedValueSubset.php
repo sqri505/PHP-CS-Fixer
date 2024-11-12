@@ -16,6 +16,7 @@ namespace PhpCsFixer\FixerConfiguration;
 
 /**
  * @readonly
+ *
  * @internal
  */
 final class AllowedValueSubset

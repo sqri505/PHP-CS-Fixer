@@ -20,7 +20,7 @@ use Fidry\CpuCoreCounter\Finder\FinderRegistry;
 
 /**
  * @author Dariusz Rumiński <dariusz.ruminski@gmail.com>
- * 
+ *
  * @readonly
  */
 final class ParallelConfigFactory

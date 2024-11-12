@@ -18,6 +18,7 @@ use PhpCsFixer\Runner\Event\FileProcessed;
 
 /**
  * @readonly
+ *
  * @internal
  */
 final class NullOutput implements ProgressOutputInterface

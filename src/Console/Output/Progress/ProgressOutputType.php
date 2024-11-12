@@ -16,6 +16,7 @@ namespace PhpCsFixer\Console\Output\Progress;
 
 /**
  * @readonly
+ *
  * @internal
  */
 final class ProgressOutputType

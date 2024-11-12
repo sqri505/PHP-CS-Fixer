@@ -21,7 +21,7 @@ use PhpCsFixer\WhitespacesFixerConfig;
 
 /**
  * @author Greg Korba <greg@codito.dev>
- * 
+ *
  * @readonly
  */
 final class ImportProcessor

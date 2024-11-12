@@ -16,6 +16,7 @@ namespace PhpCsFixer\Error;
 
 /**
  * @readonly
+ *
  * @internal
  */
 final class SourceExceptionFactory

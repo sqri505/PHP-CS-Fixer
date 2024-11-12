@@ -18,6 +18,7 @@ use PhpCsFixer\Preg;
 
 /**
  * @readonly
+ *
  * @internal
  */
 final class RstUtils

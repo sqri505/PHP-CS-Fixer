@@ -18,6 +18,7 @@ namespace PhpCsFixer\Cache;
  * @author Andreas Möller <am@localheinz.com>
  *
  * @readonly
+ *
  * @internal
  */
 final class Signature implements SignatureInterface

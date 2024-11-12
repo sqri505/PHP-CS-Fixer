@@ -19,6 +19,7 @@ use PhpCsFixer\RuleSet\AbstractMigrationSetDescription;
 
 /**
  * @readonly
+ *
  * @internal
  */
 final class PHPUnit32MigrationRiskySet extends AbstractMigrationSetDescription

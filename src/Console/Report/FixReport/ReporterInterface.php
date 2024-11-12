@@ -18,6 +18,7 @@ namespace PhpCsFixer\Console\Report\FixReport;
  * @author Boris Gorbylev <ekho@ekho.name>
  *
  * @readonly
+ *
  * @internal
  */
 interface ReporterInterface

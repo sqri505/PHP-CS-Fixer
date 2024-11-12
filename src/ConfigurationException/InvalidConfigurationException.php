@@ -20,6 +20,7 @@ use PhpCsFixer\Console\Command\FixCommandExitStatusCalculator;
  * Exceptions of this type are thrown on misconfiguration of the Fixer.
  *
  * @readonly
+ *
  * @internal
  *
  * @final Only internal extending this class is supported

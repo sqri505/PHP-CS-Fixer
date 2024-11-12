@@ -18,7 +18,7 @@ namespace PhpCsFixer\Linter;
  * Interface for PHP code linting process manager.
  *
  * @author Dariusz Rumiński <dariusz.ruminski@gmail.com>
- * 
+ *
  * @readonly
  */
 interface LinterInterface

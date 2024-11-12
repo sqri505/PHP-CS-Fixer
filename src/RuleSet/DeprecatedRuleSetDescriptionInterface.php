@@ -16,7 +16,7 @@ namespace PhpCsFixer\RuleSet;
 
 /**
  * @author Greg Korba <greg@codito.dev>
- * 
+ *
  * @readonly
  */
 interface DeprecatedRuleSetDescriptionInterface extends RuleSetDescriptionInterface

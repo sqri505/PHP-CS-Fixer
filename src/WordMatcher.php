@@ -18,6 +18,7 @@ namespace PhpCsFixer;
  * @author Dariusz Rumiński <dariusz.ruminski@gmail.com>
  *
  * @readonly
+ *
  * @internal
  */
 final class WordMatcher

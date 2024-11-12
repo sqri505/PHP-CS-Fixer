@@ -16,6 +16,7 @@ namespace PhpCsFixer\Console\Command;
 
 /**
  * @readonly
+ *
  * @internal
  */
 final class DescribeNameNotFoundException extends \InvalidArgumentException

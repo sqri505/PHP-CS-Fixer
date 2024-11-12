@@ -18,6 +18,7 @@ use PhpCsFixer\RuleSet\AbstractRuleSetDescription;
 
 /**
  * @readonly
+ *
  * @internal
  */
 final class PhpCsFixerSet extends AbstractRuleSetDescription

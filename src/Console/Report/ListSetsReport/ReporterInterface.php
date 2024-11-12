@@ -18,6 +18,7 @@ namespace PhpCsFixer\Console\Report\ListSetsReport;
  * @author Dariusz Rumiński <dariusz.ruminski@gmail.com>
  *
  * @readonly
+ *
  * @internal
  */
 interface ReporterInterface

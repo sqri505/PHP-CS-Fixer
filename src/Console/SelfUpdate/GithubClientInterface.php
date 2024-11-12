@@ -16,6 +16,7 @@ namespace PhpCsFixer\Console\SelfUpdate;
 
 /**
  * @readonly
+ *
  * @internal
  */
 interface GithubClientInterface

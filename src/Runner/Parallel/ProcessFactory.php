@@ -23,6 +23,7 @@ use Symfony\Component\Process\PhpExecutableFinder;
  * @author Greg Korba <greg@codito.dev>
  *
  * @readonly
+ *
  * @internal
  */
 final class ProcessFactory
