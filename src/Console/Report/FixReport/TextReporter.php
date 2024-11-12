@@ -19,6 +19,7 @@ use PhpCsFixer\Differ\DiffConsoleFormatter;
 /**
  * @author Boris Gorbylev <ekho@ekho.name>
  *
+ * @readonly
  * @internal
  */
 final class TextReporter implements ReporterInterface

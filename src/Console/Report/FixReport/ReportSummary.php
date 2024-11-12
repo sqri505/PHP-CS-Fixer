@@ -17,6 +17,7 @@ namespace PhpCsFixer\Console\Report\FixReport;
 /**
  * @author Dariusz Rumiński <dariusz.ruminski@gmail.com>
  *
+ * @readonly
  * @internal
  */
 final class ReportSummary

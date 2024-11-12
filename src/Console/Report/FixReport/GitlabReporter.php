@@ -27,6 +27,7 @@ use Symfony\Component\Console\Formatter\OutputFormatter;
  *
  * @author Hans-Christian Otto <c.otto@suora.com>
  *
+ * @readonly
  * @internal
  */
 final class GitlabReporter implements ReporterInterface
