@@ -22,6 +22,7 @@ use PhpCsFixer\Tokenizer\Tokens;
 /**
  * Transforms attribute related Tokens.
  *
+ * @readonly
  * @internal
  */
 final class AttributeTransformer extends AbstractTransformer

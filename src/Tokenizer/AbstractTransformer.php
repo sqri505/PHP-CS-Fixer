@@ -19,6 +19,7 @@ use PhpCsFixer\Utils;
 /**
  * @author Dariusz Rumiński <dariusz.ruminski@gmail.com>
  *
+ * @readonly
  * @internal
  */
 abstract class AbstractTransformer implements TransformerInterface

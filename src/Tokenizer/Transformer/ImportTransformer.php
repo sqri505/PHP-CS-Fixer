@@ -28,6 +28,7 @@ use PhpCsFixer\Tokenizer\Tokens;
  *
  * @author Gregor Harlan <gharlan@web.de>
  *
+ * @readonly
  * @internal
  */
 final class ImportTransformer extends AbstractTransformer

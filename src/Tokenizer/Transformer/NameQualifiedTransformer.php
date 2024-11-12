@@ -22,6 +22,7 @@ use PhpCsFixer\Tokenizer\Tokens;
 /**
  * Transform NAME_QUALIFIED, T_NAME_FULLY_QUALIFIED and T_NAME_RELATIVE into T_NAMESPACE T_NS_SEPARATOR T_STRING.
  *
+ * @readonly
  * @internal
  */
 final class NameQualifiedTransformer extends AbstractTransformer

@@ -22,6 +22,7 @@ use PhpCsFixer\Tokenizer\Tokens;
 /**
  * Transform named argument tokens.
  *
+ * @readonly
  * @internal
  */
 final class NamedArgumentTransformer extends AbstractTransformer

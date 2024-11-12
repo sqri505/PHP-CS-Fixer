@@ -24,6 +24,7 @@ use PhpCsFixer\Tokenizer\Tokens;
  *
  * Transform T_PUBLIC, T_PROTECTED and T_PRIVATE of Constructor Property Promotion into custom tokens.
  *
+ * @readonly
  * @internal
  */
 final class ConstructorPromotionTransformer extends AbstractTransformer
