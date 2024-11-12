@@ -17,6 +17,7 @@ namespace PhpCsFixer\RuleSet\Sets;
 use PhpCsFixer\RuleSet\AbstractRuleSetDescription;
 
 /**
+ * @readonly
  * @internal
  */
 final class DoctrineAnnotationSet extends AbstractRuleSetDescription

@@ -18,6 +18,7 @@ use PhpCsFixer\RuleSet\AbstractRuleSetDescription;
 use PhpCsFixer\RuleSet\DeprecatedRuleSetDescriptionInterface;
 
 /**
+ * @readonly
  * @internal
  *
  * @deprecated use `@PER-CS` instead
