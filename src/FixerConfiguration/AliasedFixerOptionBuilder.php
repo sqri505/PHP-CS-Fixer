@@ -17,6 +17,7 @@ namespace PhpCsFixer\FixerConfiguration;
 /**
  * @author ntzm
  *
+ * @readonly
  * @internal
  */
 final class AliasedFixerOptionBuilder
