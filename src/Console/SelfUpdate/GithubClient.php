@@ -31,7 +31,7 @@ final class GithubClient implements GithubClientInterface
     public function getTags(): array
     {
         $result = @file_get_contents(
-            self::URL,
+            $this->url,
             false,
             stream_context_create([
                 'http' => [
@@ -41,7 +41,7 @@ final class GithubClient implements GithubClientInterface
         );
 
         if (false === $result) {
-            throw new \RuntimeException(\sprintf('Failed to load tags at "%s".', self::URL));
+            throw new \RuntimeException(\sprintf('Failed to load tags at "%s".', $this->url));
         }
 
         /**
@@ -56,7 +56,7 @@ final class GithubClient implements GithubClientInterface
         if (JSON_ERROR_NONE !== json_last_error()) {
             throw new \RuntimeException(\sprintf(
                 'Failed to read response from "%s" as JSON: %s.',
-                self::URL,
+                $this->url,
                 json_last_error_msg()
             ));
         }
