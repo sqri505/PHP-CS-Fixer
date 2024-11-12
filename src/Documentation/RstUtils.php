@@ -17,6 +17,7 @@ namespace PhpCsFixer\Documentation;
 use PhpCsFixer\Preg;
 
 /**
+ * @readonly
  * @internal
  */
 final class RstUtils

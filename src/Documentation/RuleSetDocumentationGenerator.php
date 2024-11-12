@@ -21,6 +21,7 @@ use PhpCsFixer\RuleSet\RuleSetDescriptionInterface;
 use PhpCsFixer\Utils;
 
 /**
+ * @readonly
  * @internal
  */
 final class RuleSetDocumentationGenerator
