@@ -1,0 +1,122 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Получение данных из формы
+    $fullName = htmlspecialchars($_POST['full-name'] ? '');
+    $email = htmlspecialchars($_POST['email'] ? '');
+    $phone = htmlspecialchars($_POST['phone'] ? '');
+    $position = htmlspecialchars($_POST['position'] ? '');
+    $experience = htmlspecialchars($_POST['experience'] ? '');
+    $agreement = isset($_POST['agreement']) ? "Áno" : "Nie";
+
+    // Отображение полученных данных
+    echo "<h1>Údaje z formulára</h1>";
+    echo "<p><strong>Meno a Priezvisko:</strong> $fullName</p>";
+    echo "<p><strong>Email:</strong> $email</p>";
+    echo "<p><strong>Telefónne číslo:</strong> $phone</p>";
+    echo "<p><strong>Vybraná pozícia:</strong> $position</p>";
+    echo "<p><strong>Pracovné skúsenosti:</strong> $experience</p>";
+    echo "<p><strong>Súhlas s podmienkami:</strong> $agreement</p>";
+
+    // Здесь можно добавить обработку файлов (резюме и фото) при необходимости
+    exit; // Остановить выполнение и не отображать форму повторно
+}
+?>
+
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация на конкурс</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            font-size: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin: 0 auto;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Prihlásenie do konkurzu</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            <label for="full-name">Meno а Priezvisko</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Zadajte svoje meno a priezvisko" required>
+
+            <label for="email">e-mail</label>
+            <input type="email" id="email" name="email" placeholder="Zadajte svoj email" required>
+
+            <label for="phone">Telefónne číslo</label>
+            <input type="tel" id="phone" name="phone" placeholder="+421 (XXX) XXX-XXX" required>
+
+            <label for="position">Vybraná pozícia</label>
+            <select id="position" name="position" required>
+                <option value="">Vyberte si pozíciu</option>
+                <option value="pilot">Pilot</option>
+                <option value="flight-attendant">Letuška/Stevard</option>
+                <option value="technician">Technik</option>
+                <option value="manager">Manažér</option>
+            </select>
+
+            <label for="experience">Pracovné skúsenosti</label>
+            <textarea id="experience" name="experience" rows="4" placeholder="Opíšte svoje pracovné skúsenosti"></textarea>
+
+            <label for="resume">Životopis (PDF)</label>
+            <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+            <label for="photo">Fotografia (JPEG/PNG)</label>
+            <input type="file" id="photo" name="photo" accept=".jpeg,.jpg,.png" required>
+
+            <label for="agreement">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                Súhlasím s <a href="/terms" target="_blank">podmienkami konkurzu</a>.
+            </label>
+
+            <button type="submit">Odoslať prihlášku</button>
+        </form>
+    </div>
+</body>
+</html>
